@@ -1,25 +1,20 @@
-//active-link onpage
-const items =document.getElementsByClassName("menu-link");
-items.forEach((item)=>{
-    item.addEventListener("click", ()=>{
-        document.querySelector("active").classList.remove("active");
-    });
-});
-//slider
-var slideIndex = 1;
-showDivs(slideIndex);
+$(document).ready(function(){
+  $('.PrevButton').click(function(){
+    var currentSLide = $('.active-sld');
+    var prevSlide = currentSLide.prev();
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
+    if(prevSlide.length){
+      currentSLide.removeClass('active-sld').css('z-index', -10);
+        prevSlide.addClass('active-sld').css('z-index', 10);
+    }
+  })
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+  $('.NextButton').click(function(){
+    var currentSLide = $('.active-sld')
+    var nextSlide = currentSLide.next()
+    if(nextSlide.length){
+      currentSLide.removeClass('active-sld').css('z-index', -10);
+      nextSlide.addClass('active-sld').css('z-index', 10);
   }
-  x[slideIndex-1].style.display = "block";  
-}
+  })
+})

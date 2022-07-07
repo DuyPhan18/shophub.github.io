@@ -11,6 +11,9 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <!--CSS-->
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -138,7 +141,7 @@
                 </div>
             </div>
         </section>
-        <section class="popular-section">
+        < class="popular-section">
             <div class="title-section">         
                 <div class="title-cover flex-6">
                     <i class='bx bx-rocket' ></i>
@@ -148,61 +151,111 @@
                     </div>
                 </div> 
                 <div class="sliderButton flex-6">
-                    <div class="PrevButton sld-btn" onclick="plusDivs(-1)"><i class='bx bx-chevron-left'></i></div>
-                    <div class="NextButton sld-btn" onclick="plusDivs(1)"><i class='bx bx-chevron-right' ></i></div>
+                    <div class="PrevButton sld-btn"><i class='bx bx-chevron-left'></i></div>
+                    <div class="NextButton sld-btn"><i class='bx bx-chevron-right' ></i></div>
                 </div> 
             </div>
                    
             <div class="slider">
-                <div class="content ctn-1">
-                    <div class="img-slider-1">
-                        <img class="sld-img-sub" src="assets/img/material.png" alt="">
-                    </div>
-                    <div class="p-slider">
-                        <div class="shape-pa-1"></div>
+                <div class="slider-item ">
 
-                        <h2 class="small-title">
-                            The Materials
-                        </h2>
-                        <p>
-                            Our Fossil watch collections for men and women are
-                            inspired by a relentless to timeless design, yet their
-                            modern functionality watch.
-                        </p>
-                        <button class="btn-seemore">
-                            See more
-                        </button>
+                        <div class="content ctn-sld ctn-1">
+                           
+                            <div class="p-slider col-6 col-md-6 col-sm-12">
+                                <div class="shape-pa-1"></div>
+
+                                <h2 class="small-title">
+                                    The Materials
+                                </h2>
+                                <p>
+                                    Our Fossil watch collections for men and women are
+                                    inspired by a relentless to timeless design, yet their
+                                    modern functionality watch.
+                                </p>
+                                <button class="btn-seemore">
+                                    See more
+                                </button>
+                            </div>
+                            <div class="img-slider-1 col-6 col-md-6 col-sm-12 ">
+                                <img class="sld-img-sub" src="assets/img/material.png" alt="">
+                            </div>
+                        </div>  
+                        <div class="content ctn-sld ctn-2">   
+                            <div class="img-slider-2 col-6 col-md-6 col-sm-12">
+                                <img class="sld-img-sub-2" src="assets/img/logo.png" alt="">
+                            </div>  
+                            <div class="p-slider-2 col-6 col-md-6 col-sm-12">
+                                <div class="shape-pa-2"></div>
+                                <h2 class="small-title">
+                                    It's in the details
+                                </h2>
+                                <p>
+                                    High Quality Wearable Fashion Foward Hats.
+                                    Make Them A Part Of Your Staple Wardrobe. New Collection Illusion.
+                                    Designer Hats Australian Designed.
+                                </p>                     
+                                <button class="btn-seemore">
+                                    See more
+                                </button>        
+                            </div>
+                           
+                        </div>
+                </div>
+                <div class="slider-item active-sld">
+
+                    <div class="content ctn-sld ctn-1">
+                        <div class="img-slider-1 col-6 col-md-6 col-sm-12 ">
+                            <img class="sld-img-sub" src="assets/img/material.png" alt="">
+                        </div>
+                        <div class="p-slider col-6 col-md-6 col-sm-12">
+                            <div class="shape-pa-1"></div>
+
+                            <h2 class="small-title">
+                                The Materials
+                            </h2>
+                            <p>
+                                Our Fossil watch collections for men and women are
+                                inspired by a relentless to timeless design, yet their
+                                modern functionality watch.
+                            </p>
+                            <button class="btn-seemore">
+                                See more
+                            </button>
+                        </div>
+                    </div>  
+                    <div class="content ctn-sld ctn-2">     
+                        <div class="p-slider-2 col-6 col-md-6 col-sm-12">
+                            <div class="shape-pa-2"></div>
+                            <h2 class="small-title">
+                                It's in the details
+                            </h2>
+                            <p>
+                                High Quality Wearable Fashion Foward Hats.
+                                Make Them A Part Of Your Staple Wardrobe. New Collection Illusion.
+                                Designer Hats Australian Designed.
+                            </p>                     
+                            <button class="btn-seemore">
+                                See more
+                            </button>        
+                        </div>
+                        <div class="img-slider-2 col-6 col-md-6 col-sm-12">
+                            <img class="sld-img-sub-2" src="assets/img/logo.png" alt="">
+                        </div>
                     </div>
-                </div>  
-                <div class="content ctn-2">     
-                    <div class="p-slider-2">
-                        <div class="shape-pa-2"></div>
-                        <h2 class="small-title">
-                            It's in the details
-                        </h2>
-                        <p>
-                            High Quality Wearable Fashion Foward Hats.
-                            Make Them A Part Of Your Staple Wardrobe. New Collection Illusion.
-                            Designer Hats Australian Designed.
-                        </p>                     
-                        <button class="btn-seemore">
-                            See more
-                        </button>        
-                    </div>
-                    <div class="img-slider-2">
-                        <img class="sld-img-sub-2" src="assets/img/logo.png" alt="">
-                    </div>
-                </div>  
+            </div>
+            </div>
+            <div>
                 <div class="content ctn-3">
-                    <div class="img-ctn-1">
-                        <img class="sld-img-sub" src="assets/img/logo.png" alt="">
+                    <div class="img-ctn-1 col-4 col-md-4 col-sm-4">
+                        <img class="sld-img-sub-ctn-3" src="assets/img/logo.png" alt="">
                     </div>
-                    <div class="img-ctn-2">
-                        .img
-                        <img class="sld-img-sub-2" src="assets/img/boss.png" alt="">
+                    <div class="img-ctn-2 col-4 col-md-4 col-sm-4">
+                        <div class="wrapper-img-ctn-2">
+                            <img class="sld-img-sub-2" src="assets/img/boss.png" alt="">
+                        </div>
                     </div>
-                    <div class="img-ctn-3">
-                        
+                    <div class="img-ctn-1 col-4 col-md-4 col-sm-4">
+                       
                     </div>
                     <div class="content-sld-3">
                         <img class="img-shape-3" src="assets/img/G1.png" alt="img">
@@ -238,13 +291,13 @@
                     </div>
                 </div> 
             </div>
-            <div class="clt-content">
-                <div class="sub-title">
+            <div class="clt-content ">
+                <div class="sub-title col-2 col-md-2 col-sm-2">
                     <img class="clt-img" src="assets/img/trending.png" alt="">
                     <span>Trending</span>
                 </div>
-                <div class="p-card-collection">
-                    <div class="product-collections">
+                <div class="p-card-collection col-10">
+                    <div class="product-collections col-4 col-md-4 col-sm-4">
                         <img class="img-p-clt" src="assets/img/G1.png" alt="img">
                         <span class="product-name">
                             Glasses Women
@@ -252,8 +305,9 @@
                         <span class="price">
                             $175.5
                         </span>
+                        <button class="btn-add">Add</button>
                     </div>
-                    <div class="product-collections">
+                    <div class="product-collections col-4 col-md-4 col-sm-4">
                         <img class="img-p-clt" src="assets/img/G1.png" alt="img">
                         <span class="product-name">
                             Glasses Women
@@ -261,8 +315,9 @@
                         <span class="price">
                             $175.5
                         </span>
+                        <button class="btn-add">Add</button>
                     </div>  
-                    <div class="product-collections">
+                    <div class="product-collections col-4 col-md-4 col-sm-4">
                         <img class="img-p-clt" src="assets/img/G1.png" alt="img">
                         <span class="product-name">
                             Glasses Women
@@ -270,6 +325,8 @@
                         <span class="price">
                             $175.5
                         </span>
+                        <button class="btn-add">Add</button>
+
                     </div>
                 </div>
             </div>
@@ -298,14 +355,14 @@
             </div>
         </section>
         <section class="contact">
-            <div class="title-section contact-title">         
-                <div class="title-cover">
+            <div class="contact-wrapper">         
+                <div class="contact-title col-6 col-md-6 col-sm-6">
                     <div class="title">
                         <h1>Subcribe Newsletter</h1>
                         <small>it's designed to keep working despite</small>
                     </div>
                 </div> 
-                <div class="contact-input">
+                <div class="contact-input col-6 col-md-6 col-sm-6">
                     <input type="email" class="contact-email" placeholder="enter your email here!">
                     <button type="submit" class="contact-btn">Subscribe</button>
                 </div>
@@ -360,11 +417,11 @@
         </div>
         <hr class="mb-5">
         <div class="ft-3">
-          <div class="social-icon">
-            <i class='bx bxl-twitter' ></i>
-            <i class='bx bxl-facebook-circle' ></i>
-            <i class='bx bxl-pinterest' ></i>
-        </div>  
+            <div class="social-icon">
+                <i class='bx bxl-twitter' ></i>
+                <i class='bx bxl-facebook-circle' ></i>
+                <i class='bx bxl-pinterest' ></i>
+            </div>  
         <div class="copyright">
             <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> All Right Reservered </p>
         </div>
